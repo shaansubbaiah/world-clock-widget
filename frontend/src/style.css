@@ -3,6 +3,11 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+
+html {
+  background-color: white;
+  color: black;
+}
 /* html {
     background-color: rgba(27, 38, 54, 1);
     text-align: center;

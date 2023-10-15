@@ -2,7 +2,6 @@ package main
 
 import (
 	"context"
-	"fmt"
 )
 
 // App struct
@@ -21,7 +20,20 @@ func (a *App) startup(ctx context.Context) {
 	a.ctx = ctx
 }
 
-// Greet returns a greeting for the given name
-func (a *App) Greet(name string) string {
-	return fmt.Sprintf("Hello %s, It's show time!", name)
+type Clock struct {
+	Timezone string `json:"timezone"`
+	Name string `json:"name"`
+	TimeFormat string `json:"timeFormat"`
+	DateFormat string `json:"dateFormat"`
+	Color string `json:"color"`
+}
+
+
+
+func (a *App) GetClocks() []Clock {
+	clocks := []Clock{
+		{Timezone: "US/Eastern", Name: "EST", TimeFormat: "", DateFormat:  "",Color: "blue"},
+		{Timezone: "Asia/Kolkata",Name:  "IST",TimeFormat:  "", DateFormat: "", Color:  "orange"},
+	}
+	return clocks
 }
