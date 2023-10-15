@@ -1,4 +1,9 @@
-html {
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+/* html {
     background-color: rgba(27, 38, 54, 1);
     text-align: center;
     color: white;
@@ -23,4 +28,4 @@ body {
 #app {
     height: 100vh;
     text-align: center;
-}
+} */
