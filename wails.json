@@ -1,0 +1,13 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "world-clock",
+  "outputfilename": "world-clock-widget",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Shaan Subbaiah B C",
+    "email": "shaansubbaiah@yahoo.com"
+  }
+}
